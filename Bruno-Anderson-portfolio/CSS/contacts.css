@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz@1,5..1200&family=Poppins&family=Roboto:wght@300&display=swap');
+
+h1.h1{
+  width:60%;
+  font-size: 4rem;
+  margin-top:5rem;
+  line-height:1em;
+  font-family:sans-serif;
+}
+
+section.contactform{
+  margin:0;
+  margin-top:5rem;
+
+  display:grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.contactform>aside{
+  display:flex;
+  flex-direction: column;
+  gap:5rem;
+}
+
+.contactform h4{
+  margin-bottom:15px;
+  color:#706f6f;
+  font-weight:lighter;
+}
+
+.contactform p{
+  font-size:1.2rem;
+}
+
+.contactform a{
+  color:black;
+  font-size:1.3rem;
+  text-decoration: none;
+}
+
+.contactform a:hover{
+  color:#642a00;
+  text-decoration: underline;
+}
+
+.contactform>main{
+  margin:0;
+}
+
+.contactform>main>form{
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin-top: 3rem;
+}
+
+.contactform form>div{
+  display: grid;
+  gap:1.5rem;
+}
+
+.contactform form label{
+  font-size: 1.2rem;
+}
+
+.contactform form input{
+  font-size: 2.5rem;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid;
+}
+
+.contactform form textarea{
+  font-size: 1.5rem;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid;
+}
+
+.contactform main button{
+  margin-top:3rem;
+  font-weight: 600;
+  border:none;
+  background-color: transparent;
+  font-size: 3rem;
+  cursor:pointer;
+}
+
+.contactform main button:hover{
+  color:#642a00;
+}
+
+
+@media screen and (max-width:767px){
+  h1.h1{
+    font-size:2rem;
+    margin-top:10rem;
+    width:100%;
+  }
+
+  .contactform>aside{
+    gap:2rem;
+  }
+
+  section.contactform{
+    grid-template-columns: 1fr;
+    gap:4rem;
+  }
+
+  .contactform>main>form{
+    margin-top: 1.5rem;
+  }
+  
+  .contactform form input{
+    width:95%;
+  }
+}
